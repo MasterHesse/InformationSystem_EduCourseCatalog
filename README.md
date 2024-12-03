@@ -1,6 +1,21 @@
-# InformationSystem_EduCourseCatalog
-Our solution for HDU-ITMO Information System Laboratory Work. 
+# 部署方法
 
+克隆或下载到自己电脑后，需要注意到你的前端端口需要是5173，
 
-## This is a demo description
-But when you are going to use it, make sure your front-end server is 3157.
+# 关于网站
+
+### 前端部分：
+
+由vue3，pinia，vue-router，axios，elementplus等现代库的方法写成，对于想要学习相关技术的学生可以起到示例的作用。
+
+网站的功能有：注册登录，学生页面（查看课程信息，下载课件资料），老师页面（查看课程，编辑课程，删除课程，上传下载课件，新增课程），管理员页面（管理注册请求，管理身份）。
+
+成功打开后默认会在登录页面，所有的账号信息可以在sql文件内找到，此处提供三个：学生账号-s1-s1,老师账号-t1-t1,管理员账号-123-123
+
+# 后续计划（也许）
+
+### 前端部分：
+
+当前版本下比较的粗糙，比如没有注意到transitionGroup可以为vfor添加动画，没有使用路由传参，没有做导航守卫，没有写个人页面的展示。如果有机会会把功能补上。
+
+代码没有注释，如果有人真的要下下来参考的话可以在一天内把注释写上。
