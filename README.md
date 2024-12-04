@@ -1,21 +1,93 @@
-# 部署方法
+# HDU-ITMO Information System Laboratory Work
 
-克隆或下载到自己电脑后，需要注意到你的前端端口需要是5173，
+This is a Course Information Management System project for HDU-ITMO Information System Laboratory Work. 
 
-# 关于网站
+## Build this site locally
+### Front-End
+1. Install Node
+2. Run ```npm install``` to install the relevant dependencies
+3. Run ```npm run dev``` to start the system front-end
+4. Open http://localhost:5173 to see the system
 
-### 前端部分：
+> If your sever port is not 5173, you need to edit ```vite.config.ts``` and add code block:
+    ```
+        server: {
+        port: 5173
+    }
+    ``` 
 
-由vue3，pinia，vue-router，axios，elementplus等现代库的方法写成，对于想要学习相关技术的学生可以起到示例的作用。
+### Back-end
+1. Install JDK 1.8
+2. Install maven
+3. Install Spring
+4. Run ```mvn clean install``` to install the relevant dependencies
+5. Run the ```EduCourseCatalogApplication.java``` to start the system's backend
 
-网站的功能有：注册登录，学生页面（查看课程信息，下载课件资料），老师页面（查看课程，编辑课程，删除课程，上传下载课件，新增课程），管理员页面（管理注册请求，管理身份）。
+### Database
+1. Install tomcat
+2. Install MySQL
+3. Run ```ecc.sql``` in localhost:3306 to deploy the local database
 
-成功打开后默认会在登录页面，所有的账号信息可以在sql文件内找到，此处提供三个：学生账号-s1-s1,老师账号-t1-t1,管理员账号-123-123
+## Background Knowledge
+### Basic
+- [Git][1]
+- [Github][2]
+- [Markdown][3]
 
-# 后续计划（也许）
+### Advance
+- [Vue][4] + [Vite][5]
+- [pinia][8]
+- [element-plus][9]
+- [JavaScript][6]
+- [Node][7]
+- [Java][10]
+- [Springboot][11]
+- [Maven][12]
 
-### 前端部分：
+[1]:https://git-scm.com/
+[2]:https://github.com/
+[3]:https://markdown.com.cn/
+[4]:https://cn.vuejs.org/
+[5]:https://vitejs.cn/vite3-cn/guide/
+[6]:https://developer.mozilla.org/en-US/docs/Glossary/JavaScript
+[7]:https://nodejs.org/zh-cn
+[8]:https://pinia.vuejs.org/zh/
+[9]:https://element-plus.org/zh-CN/component/overview.html
+[10]:https://www.oracle.com/java/
+[11]:https://spring.io/projects/spring-boot
+[12]:https://maven.apache.org/
 
-当前版本下比较的粗糙，比如没有注意到transitionGroup可以为vfor添加动画，没有使用路由传参，没有做导航守卫，没有写个人页面的展示。如果有机会会把功能补上。
+## Functions
+### Authority
+#### 1. Login
+#### 2. Logout
+#### 3. Register
 
-代码没有注释，如果有人真的要下下来参考的话可以在一天内把注释写上。
+### Student
+#### 1. Check courses
+#### 2. Download syllabuses
+
+### Teacher
+#### 1. Check Courses
+#### 2. Edit Courses
+#### 3. Delete Courses
+#### 4. Upload syllabuses
+#### 5. Download syllabuses
+
+### Admin
+#### 1. Manage registration requests
+#### 2. Manage identities
+
+## Test Account
+
+### Test-Student
+- Account: s1
+- Password: s1
+
+### Test-Teacher
+- Account: t1
+- Password: t1
+
+### Test-Admin
+- Account: 123
+- Password: 123
